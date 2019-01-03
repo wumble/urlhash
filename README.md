@@ -1,3 +1,7 @@
+## fork
+this is a fork from https://github.com/jywarren/urlhash
+further information comes with the following updates
+
 # urlhash
 A simple library for reading and writing parameters to the URL hash.
 
