@@ -2,6 +2,7 @@ function urlHash() {
 
   function getUrlHashParameter(param) {
     var params = getUrlHashParameters();
+
     return params[param];
   }
 
@@ -33,7 +34,11 @@ function urlHash() {
 
   function setUrlHashParameter(param, value) {
     var params = getUrlHashParameters();
-    params[param] = value;
+    if (value === null) {
+      delete params[param];
+    } else {
+      params[param] = value;
+    }
     setUrlHashParameters(params);
   }
 
